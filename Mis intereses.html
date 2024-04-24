@@ -3,25 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <title>Mis intereses</title>
+    <style>
+        body {
+            /*Color de fondo para toda la pagina*/
+            background-color: GhostWhite;
+        }
+        .topdiv {
+            border-top-style: solid;
+            border-color: RoyalBlue;
+            border-width: 1px;
+            padding-left: 5px;
+            font-family: "Courier New", Courier, monospace;
+            text-align: center;
+        }
+        .subtitle {
+            /*Making subtitle font a little bigger*/
+            /*Also using em instead of px for font sizes for more consistent experience for both desktop and mobile devices*/
+            font-size: 1.4em;
+        }
+
+        .directores_caja {
+            /*A blue box with rounded corners div*/
+            background-color: AliceBlue;
+            border: solid;
+            border-width: 1px;
+            border-color: CornflowerBlue;
+            margin: 0 2px 15px 2px;
+            padding: 0 17px 5px 17px;
+            border-radius: 25px;
+            font-family: Verdana, Geneva, sans-serif;
+        }
+
+        .musicos_caja {
+            /*A blue box with rounded corners div*/
+            background-color: AliceBlue;
+            border: solid;
+            border-width: 1px;
+            border-color: CornflowerBlue;
+            margin: 0 2px 15px 2px;
+            padding: 0 17px 5px 17px;
+            border-radius: 25px;
+            font-family: Verdana, Geneva, sans-serif;
+        }
+
+        .estudio h3{
+            text-align: center;
+        }
+
+        .estudio p {
+            margin-top: 0;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        li {
+            font-size: 1em;
+        }
+
+        table {
+            /*puts table in the center of the page*/
+            margin: auto;
+        }
+        .kanye {
+            /*A blue div that covers the full widith of the page*/
+            background-color: Darkgrey;
+            width: 100%;
+            margin: 0 0 0 -9px;
+            padding: 2px 9px 0 0;
+            color: GhostWhite;
+            font-family: Verdana, Geneva, sans-serif;
+        }
+
+        img {
+            width: 30em;
+            border: solid;
+            border-width: 1px;
+            border-color: GhostWhite;
+        }
+
+        .kanye h3 {
+            text-align: center;
+        }
+
+        .kanye p {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
+
 <body>
 
-<div>
+<div class = "topdiv">
     <h1> Mis intereses </h1>
-    <p> Me gusta la estadística, la economía, me gusta los videojuegos, las películas y la música. Mi director favorito es David Lynch. Mi músico favorito es Kanye West a pesar de que vultures es un asco de albúm. </p>
+    <p class = "subtitle"> Me gusta la estadística, la economía, me gusta los videojuegos, las películas y la música. Mi director favorito es David Lynch. Mi músico favorito es Kanye West a pesar de que vultures es un asco de albúm. </p>
 </div>
 
-<div>
+<div class = "directores_caja">
     <h2> Top 5 de directores </h2>
     <p> David Lynch, Paul Thomas Anderson, Edward Yang, Gaspar Noé, Kubrick. </p>
 </div>
 
-<div>
+<div class = "musicos_caja">
     <h3> Top 5 músicos </h3>
     <p> Kanye, Frank Ocean, Slipknot, Aphex Twin, Car Seat Headrest </p>
 </div>
 
+<div class = "estudio">
+    <h3> Qué estudio?</h3>
+    <p> En este momento estudio <em>Estadística</em> en la <b> Universidad Nacional
+        de Colombia</b>, antes estudiaba <em>Economía en la <b>Universidad
+        de La Salle</b></em> en <em>Bogotá</em></p>
+</div>
 
+<div>
+    <h3> Mi pagina personal</h3>
+    <p> Mi página es: <a href="https://github.com/mvegag" target = "blank_">Github</a></p>
+</div>
+
+<div class = "kanye">
+    <table>
+        <tr>
+            <td>
+                <img src = "https://upload.wikimedia.org/wikipedia/commons/a/a1/Kanye_West_Chicago_Tour_2008.jpg" width = "75%" />
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div>
+    <ol> Directores
+        <li> David Lynch </li>
+        <li> Paul Thomas Anderson</li>
+        <li> Edward Yang </li>
+    </ol>
+
+    <ul> Amigos
+        <li>Daniela</li>
+        <li>Cristian</li>
+        <li>Sebastian</li>
+        <li>Kevin</li>
+    </ul>
+
+    <ol> Directores y peliculas
+        <li>David Lynch
+            <ul>
+                <li>Mulholland drive</li>
+                <li>Inladn Empire</li>
+            </ul>
+        </li>
+        <li>Paul Thomas Anderson
+            <ul>
+                <li>Magnolia</li>
+                <li>Punch Drunk Love</li>
+            </ul>
+        </li>
+        <li>Edward Yang
+            <ul>
+                <li>A brighter summer day</li>
+                <li>The terrorizers</li>
+            </ul>
+        </li>
+    </ol>
+</div>
+
+<div>
+    <table>
+        <tr>
+            <th>Musico</th>
+            <th>Album</th>
+            <th>Cancion</th>
+        </tr>
+        <tr>
+            <td>Kanye</td>
+            <td>My beautiful dark twisted fantasy</td>
+            <td>Blood on the leaves</td>
+        </tr>
+        <tr>
+            <td>Aphex twin</td>
+            <td>I care because you do</td>
+            <td>April 14th</td>
+        </tr>
+        <tr>
+            <td>Car seat headrest</td>
+            <td>Twin fantasy</td>
+            <td>Sober to death</td>
+        </tr>
+    </table>
+</div>
 
 </body>
 </html>
